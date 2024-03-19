@@ -1,0 +1,8 @@
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\bin\Debug\DB_Bureau_of_Tech_Inven.dacpac
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\DB_Bureau_of_Tech_Inven.sqlproj.AssemblyReference.cache
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\Model.xml
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\refactor.xml
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\postdeploy.sql
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\predeploy.sql
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\DB_Bureau_of_Tech_Inven.dll
+e:\SQL2019\BD_Bureau_of_Tech_Inven\DB_Bureau_of_Tech_Inven\obj\Debug\DB_Bureau_of_Tech_Inven.pdb

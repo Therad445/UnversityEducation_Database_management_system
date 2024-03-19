@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/YZoR5rGKP9iTf1cGR8ZFue4fXi+zF9wMTLq2YFAHNrGgGBzOCAJgXf70FKL2wartILIE0EbHWAAfoQyzRf2Fw==",
+  "success": true,
+  "projectFilePath": "e:\\SQL2019\\BD_Bureau_of_Tech_Inven\\DB_Bureau_of_Tech_Inven\\DB_Bureau_of_Tech_Inven.sqlproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net46\\1.0.0\\microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

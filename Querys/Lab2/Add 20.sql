@@ -1,7 +1,3 @@
-ALTER TABLE Заявки
-ALTER COLUMN Phone NVARCHAR(20); -- Увеличьте размер до нужного
-
-
 -- Выдача
 INSERT INTO Выдача (NumberClaim, Finish) VALUES
 (1, 0),
