@@ -1,5 +1,14 @@
-ALTER TABLE table_name
-ADD CONSTRAINT constraint_name PRIMARY KEY (column_name),
-ADD CONSTRAINT constraint_name FOREIGN KEY (column_name) REFERENCES other_table(column_name),
-ADD CONSTRAINT constraint_name UNIQUE (column_name),
-ADD CONSTRAINT constraint_name CHECK (condition);
+BEGIN TRANSACTION;
+
+
+
+-- Установим ограничение NOT NULL для столбца Name
+ALTER TABLE Заявки ALTER COLUMN Name VARCHAR(60) NOT NULL;
+
+-- Установим ограничение NOT NULL для столбца Phone
+ALTER TABLE Заявки ALTER COLUMN Phone VARCHAR(20) NOT NULL;
+
+-- Установим ограничение NOT NULL для столбца Address
+ALTER TABLE Заявки ALTER COLUMN Address VARCHAR(60) NOT NULL;
+
+COMMIT TRANSACTION;

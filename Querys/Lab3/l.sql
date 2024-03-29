@@ -1,0 +1,8 @@
+BEGIN TRANSACTION;
+
+-- Вставка данных из таблицы Заявки в TEST_TABLE
+INSERT INTO TEST_TABLE
+SELECT * FROM Заявки;
+
+
+COMMIT TRANSACTION;

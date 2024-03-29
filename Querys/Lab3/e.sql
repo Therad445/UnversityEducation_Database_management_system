@@ -1,2 +1,9 @@
-CREATE BITMAP INDEX high_cardinality_index ON table_name (high_cardinality_column);
-CREATE BITMAP INDEX low_cardinality_index ON table_name (low_cardinality_column);
+BEGIN TRANSACTION;
+
+-- Битовой индекс для столбца с высокой кардинальностью с включением дополнительных полей
+CREATE INDEX BIT_IDX_NumberClaim_Name ON Заявки (NumberClaim) INCLUDE (Name);
+
+-- Битовой индекс для столбца с низкой кардинальностью с включением дополнительных полей
+CREATE INDEX BIT_IDX_District_Address ON Заявки (District) INCLUDE (Address);
+
+COMMIT TRANSACTION;

@@ -1,1 +1,2 @@
-SELECT * FROM table_name WHERE high_cardinality_column = 'значение';
+-- Например, выборка заявок по номеру заявки (столбец NumberClaim)
+SELECT * FROM Заявки WHERE NumberClaim = 42;

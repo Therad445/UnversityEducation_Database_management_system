@@ -1,2 +1,11 @@
-SELECT * FROM table1, table2 WHERE condition;
-SELECT * FROM table1 JOIN table2 ON condition;
+BEGIN TRANSACTION;
+
+-- Декартово произведение (картезианское) между таблицами Заявки и Выход_техника
+SELECT * FROM Заявки, Выход_техника;
+
+-- Внешнее соединение (LEFT JOIN) между таблицами Заявки и Выход_техника
+SELECT * FROM Заявки LEFT JOIN Выход_техника ON Заявки.NumberClaim = Выход_техника.NumberClaim;
+
+
+
+COMMIT TRANSACTION;

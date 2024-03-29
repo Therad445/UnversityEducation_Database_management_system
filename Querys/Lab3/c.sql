@@ -1,1 +1,2 @@
-SELECT * FROM table_name WHERE low_cardinality_column = 'значение';
+-- Например, выборка заявок по району (столбец District)
+SELECT * FROM Заявки WHERE District = 'Центральный';

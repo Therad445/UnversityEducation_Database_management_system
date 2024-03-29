@@ -1,0 +1,9 @@
+BEGIN TRANSACTION;
+
+SELECT 
+    DateStop,
+    DAY(EOMONTH(DateStop)) AS DaysInMonth
+FROM Заявки;
+
+
+COMMIT TRANSACTION;
