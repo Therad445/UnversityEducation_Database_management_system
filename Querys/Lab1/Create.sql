@@ -1,15 +1,8 @@
+BEGIN TRANSACTION;
+
 -- TABLE
-CREATE TABLE Выдача (
-    NumberClaim INT NOT NULL,
-    Finish BIT NOT NULL
-);
-CREATE TABLE Выход_техники (
-    NumberClaim INT NOT NULL,
-    Inspector DATE NOT NULL,
-    Time VARCHAR(20) NOT NULL
-);
 CREATE TABLE Заявки (
-    NumberClaim INT NOT NULL,
+    NumberClaim INT PRIMARY KEY,
     Name VARCHAR(60) NOT NULL,
     Phone VARCHAR(20) NOT NULL,
     Receipt BIT NOT NULL,
@@ -23,24 +16,34 @@ CREATE TABLE Заявки (
     DateStop DATE NULL,
     Cost MONEY NOT NULL
 );
+
+CREATE TABLE Выдача (
+    NumberClaim INT PRIMARY KEY,
+    Finish BIT NOT NULL
+);
+
+CREATE TABLE Выход_техника (
+    NumberClaim INT PRIMARY KEY,
+    Inspector DATE NOT NULL,
+    Time TIME NOT NULL,
+    FOREIGN KEY (NumberClaim) REFERENCES Заявки(NumberClaim)
+);
+
 CREATE TABLE Исполнение (
-    NumberClaim INT NOT NULL,
+    NumberClaim INT PRIMARY KEY,
     Chief VARCHAR(30) NOT NULL,
     Worker VARCHAR(30) NOT NULL,
     DateWorker DATE NOT NULL,
-    Helper VARCHAR(30) NULL
+    Helper VARCHAR(30) NULL,
+    FOREIGN KEY (NumberClaim) REFERENCES Заявки(NumberClaim)
 );
+
 CREATE TABLE Оплата (
-    NumberClaim INT NOT NULL,
+    NumberClaim INT PRIMARY KEY,
     Cash BIT NOT NULL,
     DateCost DATE NOT NULL,
-    Value MONEY NOT NULL
+    Value MONEY NOT NULL,
+    FOREIGN KEY (NumberClaim) REFERENCES Заявки(NumberClaim)
 );
- 
--- INDEX
- 
--- TRIGGER
- 
--- VIEW
- 
 
+COMMIT TRANSACTION;
