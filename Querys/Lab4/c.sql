@@ -1,6 +1,5 @@
 BEGIN TRANSACTION;
 
--- Выбираем значения поля Name
 SELECT 
     Name AS OriginalText,
     UPPER(Name) AS AllUpperCase,

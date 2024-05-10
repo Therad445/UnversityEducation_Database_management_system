@@ -1,6 +1,5 @@
 BEGIN TRANSACTION;
 
--- Определяем минимальную, максимальную и среднюю длину текста в столбце Name
 SELECT 
     MIN(LEN(Name)) AS MinLength,
     MAX(LEN(Name)) AS MaxLength,
